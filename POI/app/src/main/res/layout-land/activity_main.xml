@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="491dp"
+            android:layout_height="722dp"
+            android:background="@drawable/bg_lines"
+            android:scaleX="2"
+            android:scaleY="1.2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_stars" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="337dp"
+            android:layout_height="248dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_layer" />
+
+        <ImageButton
+            android:id="@+id/loginBTN"
+            android:layout_width="143dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bg_bttn_log"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/regBTN"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <ImageButton
+            android:id="@+id/regBTN"
+            android:layout_width="143dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_bttn_reg"
+            android:onClick="reg"
+            app:layout_constraintEnd_toStartOf="@id/loginBTN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <EditText
+            android:id="@+id/username2"
+            android:layout_width="301dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="92dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="304dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/teal_200"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/username2" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="77dp"
+            android:layout_height="369dp"
+            android:scaleY="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu_out" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="599dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="216dp"
+            android:layout_height="247dp"
+            android:layout_margin="50dp"
+            android:src="@drawable/kinglogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
